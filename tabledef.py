@@ -15,9 +15,9 @@ class User(Base):
     password = Column(String) #name of new column and input type
 
 
-def __init__(self, username, password):
-    self.username = username
-    self.password = password
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
 
 
 Base.metadata.create_all(engine) #create table
